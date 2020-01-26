@@ -2,10 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Your Tithe and Offering Calculator</title>
   </head>
   <body>
+    <script src="./script.js"></script>
     <h1> Welcome to Your Tithe and Offering Calculator</h1>
+    <br>
+    <br>
     <div class="">
       <p>This tool will allow you to easily calculate the amount of tithe and offering that you decide to give back to your church</p>
     </div>
@@ -15,7 +19,7 @@
         <br>
         <br>
         <br>
-        <input type="number" name="" value="">
+        <input type="number" name="" value="" min = "0.00">
       </form>
     </div>
     <br>
@@ -29,14 +33,14 @@
         <br>
         <br>
         <br>
-        <input type="number" name="" value=""> %
+        <input type="number" name="" value="" min = "1" max = "90"> %
       </form>
     </div>
     <br>
     <br>
     <br>
     <div class="">
-      <button type="button">Calculate</button>
+    <button id = "myButton" onclick = "location.href= 'result.html'" >Calculate</button>
     </div>
 
   </body>
