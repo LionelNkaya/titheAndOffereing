@@ -2,29 +2,29 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
     <title>Your Tithe and Offering Calculator</title>
   </head>
   <body>
+    <div class="contrainer-fluid text-center">
     <h1> Welcome to Your Tithe and Offering Calculator</h1>
+    </div>
     <br>
     <br>
-    <div class="">
+    <div class="contrainer-fluid text-center">
       <p>This tool will allow you to easily calculate the amount of tithe and offering that you decide to give back to your church</p>
     </div>
-    <div class="">
-      <form>
+    <div class="contrainer-fluid text-center">
         What is your income?
         <br>
         <br>
         <br>
         <input  id = "income" type="number" placeholder="1.00" step="0.01" min = "0.00">
-      </form>
     </div>
     <br>
     <br>
-    <div class="">
-      <form>
+    <div class="contrainer-fluid text-center">
         After tithe, what percentage of your income do you want to give as offering?
         <br>
         <br>
@@ -33,34 +33,35 @@
         <br>
         <br>
         <input  id = "percentOffering" type="number" name="" value="" min = "1" max = "90"> %
-      </form>
     </div>
     <br>
     <br>
     <br>
 
-    <div class="">
+    <div class="contrainer-fluid text-center">
     <button id = "myButton">Calculate</button>
     </div>
 
      <br>
      <br>
-     <div class="">
+     <div class="contrainer-fluid text-center">
        "Tithe <i>always 10%</i>:"
        <p id = "displayTithe"></p>
      </div>
      <br>
      <br>
-     <div class="">
+     <div class="contrainer-fluid text-center">
         "Offering <i>The percentage you chose</i>:"
        <p id = "displayOffering"></p>
      </div>
      <br>
      <br>
-     <div class="">
+     <div class="contrainer-fluid text-center">
        Total:
       <p id = "displayTotal"></p>
      </div>
-     <script src="script.js"></script>
+
+     <!--The scripts :-->
+     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
