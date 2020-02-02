@@ -6,7 +6,6 @@
     <title>Your Tithe and Offering Calculator</title>
   </head>
   <body>
-    <script src="./script.js"></script>
     <h1> Welcome to Your Tithe and Offering Calculator</h1>
     <br>
     <br>
@@ -14,18 +13,18 @@
       <p>This tool will allow you to easily calculate the amount of tithe and offering that you decide to give back to your church</p>
     </div>
     <div class="">
-      <form class="" action="index.html" method="post">
+      <form>
         What is your income?
         <br>
         <br>
         <br>
-        <input type="number" name="" value="" min = "0.00">
+        <input  id = "income" type="number" name="" value="" min = "0.00">
       </form>
     </div>
     <br>
     <br>
     <div class="">
-      <form class="" action="index.html" method="post">
+      <form>
         After tithe, what percentage of your income do you want to give as offering?
         <br>
         <br>
@@ -33,15 +32,35 @@
         <br>
         <br>
         <br>
-        <input type="number" name="" value="" min = "1" max = "90"> %
+        <input  id = "percentOffering" type="number" name="" value="" min = "1" max = "90"> %
       </form>
     </div>
     <br>
     <br>
     <br>
+
     <div class="">
-    <button id = "myButton" onclick = "location.href= 'result.html'" >Calculate</button>
+    <button id = "myButton">Calculate</button>
     </div>
 
+     <br>
+     <br>
+     <div class="">
+       "Tithe <i>always 10%</i>:"
+       <p id = "displayTithe"></p>
+     </div>
+     <br>
+     <br>
+     <div class="">
+        "Offering <i>The percentage you chose</i>:"
+       <p id = "displayOffering"></p>
+     </div>
+     <br>
+     <br>
+     <div class="">
+       Total:
+      <p id = "displayTotal"></p>
+     </div>
+     <script src="script.js"></script>
   </body>
 </html>
