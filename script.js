@@ -1,10 +1,14 @@
+document.getElementById("container").onchange = function() {
+
 var myButton  = document.getElementById("myButton");
 
-var income = 0.00;
-income = +document.getElementById("income").value;
+ var income = 0.00;
+ income = +document.getElementById("income").value;
 
 var percentOffering = 0;
-var percentOffering = +document.getElementById("percentOffering").value;
+percentOffering = +document.getElementById("percentOffering").value;
+
+
 
 var displayTithe = document.getElementById("displayTithe");
 var displayOffering = document.getElementById("displayOffering");
@@ -20,10 +24,11 @@ var offeringAmountRounded = offeringAmount.toFixed(2);
 var totalRounded = total.toFixed(2);
 
 
-myButton.onclick = function() {
+myButton.onclick = function calculateTithe () {
 
   displayTithe.textContent = titheRounded;
   displayOffering.textContent = offeringAmountRounded;
   displayTotal.textContent = totalRounded;
 
+};
 };
